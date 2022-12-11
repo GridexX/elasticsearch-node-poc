@@ -77,6 +77,12 @@ app.get(route, async (req, res) => {
     matchers.push({ match: { name: queryParam.name } });
   }
 
+  if (queryParam?.search) {
+    ["description", "name", "tags", "author"].forEach(field => {
+      matchers.push({ match: { [field]: queryParam.search } });
+    })
+  }
+
 
   if (queryParam?.tags) {
     filters.push({ term: { tags: queryParam.tags } });
@@ -94,7 +100,10 @@ app.get(route, async (req, res) => {
   }
   let query = {}
   if (matchers.length > 0) {
-    query.must = matchers;
+    if (filters.length > 0 || queryParam?.search)
+      query.should = matchers;
+    else
+      query.must = matchers;
   }
 
   if (filters.length > 0) {

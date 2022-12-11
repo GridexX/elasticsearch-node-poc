@@ -22,6 +22,8 @@ You can also filter contents by author and tags:
 - GET `https://poc-elastic.gridexx.fr/contents?tags=programming`
 - GET `https://poc-elastic.gridexx.fr/contents?author=gridexx`
 
+Finally, you can perform for a query matching overall several fields by using the `search` query parameter. It will match the query against the `NAME`, `DESCRIPTION`, `AUTHOR` and `TAGS` fields.
+- GET `https://poc-elastic.gridexx.fr/contents?search=react`
 
 **Examples** 
 
