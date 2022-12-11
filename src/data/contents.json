@@ -1,0 +1,118 @@
+[
+  {
+    "name": "React Content",
+    "author": "GridexX",
+    "description": "Learn React in 10 days, this is the 1st.",
+    "tags": [
+      "react",
+      "javascript"
+    ],
+    "type": "exercise",
+    "reward": 200,
+    "rootComponent": {
+      "type": "container",
+      "data": {
+        "components": [
+          {
+              "name": "Exercice 1",
+              "description": "",
+              "type": "markdown",
+              "reward": 200,
+              "data": "This is the first exercise of React. In this one you have to take an argument in parameter and print through to the console"
+          }
+        ],
+        "validators": [
+          {
+            "isHidden": true,
+            "expected": {
+              "stdout": [
+                "Hello React"
+              ]
+            },
+            "input": {
+              "stdin": [
+                "Hello React"
+              ]
+            }
+          }
+        ],
+        "editorSettings": {
+          "languages": [
+            {
+              "defaultCode": "console.log('Hello World')",
+              "language": "NODE",
+              "version": "v16"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "name": "Rust Day 1",
+    "author": "GridexX",
+    "description": "Learn Rust in 10 days, this is the 1st.",
+    "type": "exercise",
+    "tags": [
+      "rust",
+      "programming"
+    ],
+    "reward": 500,
+    "rootComponent": {
+      "type": "container",
+      "data": {
+        "components": [
+          {
+              "name": "Exercice 1",
+              "description": "",
+              "type": "markdown",
+              "reward": 500,
+              "data": "This is the first exercice of Rust. You should display a 'Hello World!' in the console"
+          }
+        ],
+        "validators": [
+          {
+            "isHidden": true,
+            "expected": {
+              "stdout": [
+                "Hello World!"
+              ],
+              "checked": true
+            },
+            "input": {
+              "stdin": [
+                ""
+              ],
+              "id": "Unknown Type: uuid"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "Golang lessons",
+    "description": "In this lesson , you will learn the basics of Golang. From functions to types, and many more, check this course to learn Golang",
+    "tags": [
+      "golang",
+      "programming"
+    ],
+    "author": "Polycode",
+    "type": "exercise",
+    "reward": 0,
+    "rootComponent": {
+      "type": "container",
+      "data": {
+        "components": [
+          {
+              "name": "First Lesson",
+              "description": "",
+              "type": "markdown",
+              "reward": 0,
+              "data": "Golang is a statically-typed and procedural programming language having syntax similar to C language. It was developed in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson at Google. But they launched it in 2009 as an open-source programming language. It provides a rich standard library, garbage collection, and dynamic-typing capability and also provides support for the environment adopting patterns alike to dynamic languages. The latest version of the Golang is 1.13.1 released on 3rd September 2019. Here, we are providing a complete tutorial of Golang with proper examples."
+          }
+        ]
+      }
+    }
+  }
+]
