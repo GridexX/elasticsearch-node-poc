@@ -15,15 +15,15 @@ ElasticSearch matches query by relevance score (https://www.elastic.co/guide/en/
 In this POC, we use the `NAME` and the `DESCRIPTION` fields to search for contents as query parameters :
 
 With those parameters, you can search for contents with the following request:
-- GET `https://poc-elastic.gridexx.fr/contents?name=react`
-- GET `https://poc-elastic.gridexx.fr/contents?description=days`
+- GET `https://poc-elastic.gridexx.fr/content?name=react`
+- GET `https://poc-elastic.gridexx.fr/content?description=days`
 
 You can also filter contents by author and tags:
-- GET `https://poc-elastic.gridexx.fr/contents?tags=programming`
-- GET `https://poc-elastic.gridexx.fr/contents?author=gridexx`
+- GET `https://poc-elastic.gridexx.fr/content?tags=programming`
+- GET `https://poc-elastic.gridexx.fr/content?author=gridexx`
 
 Finally, you can perform for a query matching overall several fields by using the `search` query parameter. It will match the query against the `NAME`, `DESCRIPTION`, `AUTHOR` and `TAGS` fields.
-- GET `https://poc-elastic.gridexx.fr/contents?search=react`
+- GET `https://poc-elastic.gridexx.fr/content?search=react`
 
 **Examples** 
 
